@@ -36,7 +36,7 @@ with open(csv_path) as csv_file:
 
 mean_change = net_sum/cnt
 
-# list to record resulting text
+# string to record and write analysis
 results = f"Financial Analysis\n----------------------------\nTotal Months: {cnt}\nTotal: ${int(net_sum)}\nAverage Change: ${mean_change:.2f}\nGreatest Increase in Profits: {profit_month} (${int(max_profit)})\nGreatest Decrease in Profits: {loss_month} (${int(max_loss)})"
 
 print(results)
